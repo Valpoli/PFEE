@@ -1,0 +1,5 @@
+#define VERSION "1.0.3"
+#define COMPILER "gcc (Ubuntu 11.3.0-1ubuntu1~22.04.1) 11.3.0 -W -Wall -O3 -DCOMPACT -DNEMBEDDED -DNDEBUG -DNMETRICS -DNOPTIONS -DNPROOFS -DQUIET -DNSTATISTICS"
+#define ID "79d8d8f20465e71fd2b0f193b468898cd803a59a"
+#define BUILD "Sun Jun 18 14:42:30 CEST 2023 Linux valentin-GLO-FX6P 5.19.0-43-generic x86_64"
+#define DIR "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB-HyWalk/build"

@@ -1,0 +1,5 @@
+#define VERSION "1.0.3"
+#define COMPILER "gcc (Ubuntu 11.3.0-1ubuntu1~22.04.1) 11.3.0 -W -Wall -O3 -DNEMBEDDED -DNDEBUG -DNMETRICS -DNOPTIONS -DNSTATISTICS -DUNSAT"
+#define ID "9636debf99415f5c075cf9aceff4048ede062148"
+#define BUILD "Sun Jun 18 14:32:08 CEST 2023 Linux valentin-GLO-FX6P 5.19.0-43-generic x86_64"
+#define DIR "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build"

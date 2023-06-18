@@ -1,0 +1,17 @@
+all:
+	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build"
+kissat:
+	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build" kissat
+tissat:
+	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build" tissat
+clean:
+	rm -f "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources"/makefile
+	-$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build" clean
+	rm -rf "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build"
+coverage:
+	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build" coverage
+indent:
+	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build" indent
+test:
+	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/all_kissat/kissat_inc/sources/build" test
+.PHONY: all clean coverage indent kissat test tissat
