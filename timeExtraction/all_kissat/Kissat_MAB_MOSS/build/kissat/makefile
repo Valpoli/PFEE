@@ -1,17 +1,17 @@
 all:
-	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build"
+	$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build"
 kissat:
-	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" kissat
+	$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" kissat
 tissat:
-	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" tissat
+	$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" tissat
 clean:
-	rm -f "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat"/makefile
-	-$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" clean
-	rm -rf "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build"
+	rm -f "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat"/makefile
+	-$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" clean
+	rm -rf "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build"
 coverage:
-	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" coverage
+	$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" coverage
 indent:
-	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" indent
+	$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" indent
 test:
-	$(MAKE) -C "/home/valentin/Documents/PFEE/EXCELKissat/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" test
+	$(MAKE) -C "/home/valentin/Documents/PFEE/timeExtraction/all_kissat/Kissat_MAB_MOSS/build/kissat/build" test
 .PHONY: all clean coverage indent kissat test tissat

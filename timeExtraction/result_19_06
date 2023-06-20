@@ -1,0 +1,22 @@
+50760438f6683aab1114ae827c7b3e01_7.cnf 2 [10, 18] ['ekissat-mab-db-v1/', 'Kissat_MAB_UCB/build/kissat/'] ['--sat --no-options', '--sat --no-options'] 2100 
+1549b66fa2cf5fb102411320914e3783_.cnf 2 [3, 19] ['Kissat_MAB-HyWalk/', 'Kissat_MAB_UCB/build/kissat/'] ['--unsat --no-options', '--unsat --no-options'] 1990 
+d41d8cd98f00b204e9800998ecf8427e_1.cnf 1 [1] ['Kissat_MAB-HyWalk/'] ['--ultimate'] 630 
+50760438f6683aab1114ae827c7b3e01_12.cnf 1 [2] ['Kissat_MAB-HyWalk/'] ['--sat --no-options'] 140 
+test_1.cnf 1 [1] ['Kissat_MAB-HyWalk/'] ['--ultimate'] 3650 
+50760438f6683aab1114ae827c7b3e01_8.cnf 1 [18] ['Kissat_MAB_UCB/build/kissat/'] ['--sat --no-options'] 4830 
+d41d8cd98f00b204e9800998ecf8427e_3.cnf 1 [5] ['kissat_inc/sources/'] ['--ultimate'] 630 
+681e5fcbbaa5b6ba160b5464d8c68543_4.cnf 1 [18] ['Kissat_MAB_UCB/build/kissat/'] ['--sat --no-options'] 2790 
+1549b66fa2cf5fb102411320914e3783_3.cnf 1 [19] ['Kissat_MAB_UCB/build/kissat/'] ['--unsat --no-options'] 1950 
+681e5fcbbaa5b6ba160b5464d8c68543_7.cnf 1 [17] ['Kissat_MAB_UCB/build/kissat/'] ['--ultimate'] 43760 
+232bac5a9ffa8d764c3f4687bc853784_3.cnf 1 [9] ['ekissat-mab-db-v1/'] ['--ultimate'] 1000 
+681e5fcbbaa5b6ba160b5464d8c68543_6.cnf 1 [9] ['ekissat-mab-db-v1/'] ['--ultimate'] 3840 
+50760438f6683aab1114ae827c7b3e01_9.cnf NS NS NS NS 
+681e5fcbbaa5b6ba160b5464d8c68543_3.cnf 1 [5] ['kissat_inc/sources/'] ['--ultimate'] 970 
+d41d8cd98f00b204e9800998ecf8427e_4.cnf 1 [13] ['Kissat_MAB_MOSS/build/kissat/'] ['--ultimate'] 3610 
+50760438f6683aab1114ae827c7b3e01_11.cnf 1 [6] ['kissat_inc/sources/'] ['--sat --no-options'] 140 
+50760438f6683aab1114ae827c7b3e01_10.cnf NS NS NS NS 
+d41d8cd98f00b204e9800998ecf8427e_2.cnf 1 [14] ['Kissat_MAB_MOSS/build/kissat/'] ['--sat --no-options'] 280 
+681e5fcbbaa5b6ba160b5464d8c68543_5.cnf 2 [13, 17] ['Kissat_MAB_MOSS/build/kissat/', 'Kissat_MAB_UCB/build/kissat/'] ['--ultimate', '--ultimate'] 1330 
+232bac5a9ffa8d764c3f4687bc853784_0.cnf 3 [1, 5, 13] ['Kissat_MAB-HyWalk/', 'kissat_inc/sources/', 'Kissat_MAB_MOSS/build/kissat/'] ['--ultimate', '--ultimate', '--ultimate'] 80 
+681e5fcbbaa5b6ba160b5464d8c68543_0.cnf 2 [16, 17] ['Kissat_MAB_UCB/build/kissat/', 'Kissat_MAB_UCB/build/kissat/'] ['', '--ultimate'] 40 
+d41d8cd98f00b204e9800998ecf8427e_3 (1).cnf NS NS NS NS 

@@ -90,14 +90,26 @@ def extract_result(time_cnf_result,cnf, options, solver_list, timeout):
     solver_len = len(solver_list)
     i = 0
     best_time = timeout * 1001
-    best_solv = 0
-    best_option = 0
+    # best_solv = 0
+    # best_option = 0
+    best_solv = []
+    best_option = []
     while i < solver_len :
         j = 0
         while j < options_len :
-            if (time_cnf_result[i][j] > 0 and time_cnf_result[i][j] < best_time):
-                best_solv = i
-                best_option = j
+            if (time_cnf_result[i][j] > 0 and time_cnf_result[i][j] == best_time):
+                # best_solv = i
+                best_solv.append(i)
+                # best_option = j
+                best_option.append(j)
+                best_time = time_cnf_result[i][j]
+            elif (time_cnf_result[i][j] > 0 and time_cnf_result[i][j] < best_time):
+                # best_solv = i
+                best_solv = []
+                best_option = []
+                best_solv.append(i)
+                # best_option = j
+                best_option.append(j)
                 best_time = time_cnf_result[i][j]
             j += 1
         i += 1
@@ -106,15 +118,50 @@ def extract_result(time_cnf_result,cnf, options, solver_list, timeout):
         return [cnf,"NS","NS","NS","NS"]
     # sinon on renvoi dans l'ordre nom cnf, l'index utile au svm, le nom du solver, le nom de l'option, le temps
     else :
-        return [cnf,best_option + best_solv * options_len,solver_list[best_solv],options[best_option],best_time]
+        number_of_best_solution = len(best_solv)
+        list_best_index = []
+        best_solvers = []
+        best_options = []
+        k = 0
+        while (k < number_of_best_solution):
+            list_best_index.append(best_option[k] + best_solv[k] * options_len)
+            best_solvers.append(solver_list[best_solv[k]])
+            best_options.append(options[best_option[k]])
+            k += 1
+        print([cnf,number_of_best_solution, list_best_index,best_solvers,best_options,best_time])
+        return [cnf,number_of_best_solution, list_best_index,best_solvers,best_options,best_time]
     
 def store_array_in_file(array, filename):
     try:
         with open(filename, 'w') as file:
-            file.truncate(0)  # Delete the existing content of the file
-            for sub_array in array:
-                line = ' '.join(map(str, sub_array)) + '\n'
-                file.write(line)
+            # file.truncate(0)  # Delete the existing content of the file
+            # for sub_array in array:
+            #     line = ' '.join(map(str, sub_array)) + '\n'
+            #     file.write(line)
+            for e in array:
+                file.write(str(e) + " ")
         print("The array has been successfully stored in the file.")
     except IOError:
         print("Error writing to the file.")
+
+def ajouter_ligne_fichier(tableau, nom_fichier):
+    with open(nom_fichier, 'a') as f:
+        for element in tableau:
+            # print(element)
+            f.write(str(element) + ' ')
+        f.write('\n')
+
+
+# ex = [[120, 10, 120, 120], [120, 110, 110, 100], [120, 100, 110, 120], [100, 110, 100, 130], [110, 100, 100, 120]]
+
+# def test():
+#     yes = extract_result(ex,"test.cnf", options, solver_list, timeout)
+#     ajouter_ligne_fichier(yes,"oldel_passo")
+
+
+# solver_list = ["Kissat_MAB-HyWalk/", "kissat_inc/sources/", "ekissat-mab-db-v1/", "Kissat_MAB_MOSS/build/kissat/", "Kissat_MAB_UCB/build/kissat/"]
+# # solver_list = ["Kissat_MAB-HyWalk/"]
+# options = ["", "--ultimate", "--sat --no-options", "--unsat --no-options"]
+# timeout = 60
+
+# test()
